@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Fiber Optic Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --logo-orange: #ff6600;
+    }
+    .text-logo { color: var(--logo-orange) !important; }
+    .btn-logo {
+      background: var(--logo-orange) !important;
+      color: #fff !important;
+      border: none;
+    }
+    .btn-logo:hover, .btn-logo:focus {
+      background: #fff !important;
+      color: var(--logo-orange) !important;
+      border: 1.5px solid var(--logo-orange) !important;
+    }
+    .footer-logo {
+      background: #181818 !important;
+      color: #fff !important;
+      border-top: 2px solid var(--logo-orange) !important;
+    }
+    .card-title, h2, h1 {
+      color: var(--logo-orange) !important;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-dark border-bottom border-logo">
+    <div class="container d-flex align-items-center py-2">
+      <img src="logo.jpg" alt="ACS Logo" class="logo me-3" style="width:120px;">
+      <h1 class="text-logo flex-grow-1 mb-0" style="font-size:2rem;">ACS</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container my-4">
+    <section class="mb-5">
+      <h2 class="text-logo mb-4">All Products & Accessories</h2>
+      <div class="row g-4">
+        <!-- Fiber Cables -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="gyxtw.jpeg" class="card-img-top" alt="4 Core Cable">
+            <div class="card-body">
+              <h5 class="card-title">4 Core - 1000m</h5>
+              <p class="card-text">Ideal for small installations.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('4 Core Cable - 1000m')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="gyxtw.jpeg" class="card-img-top" alt="6 Core Cable">
+            <div class="card-body">
+              <h5 class="card-title">6 Core - 2000m</h5>
+              <p class="card-text">Perfect for medium projects.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('6 Core Cable - 2000m')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="gyxtw.jpeg" class="card-img-top" alt="8 Core Cable">
+            <div class="card-body">
+              <h5 class="card-title">8 Core - 3000m</h5>
+              <p class="card-text">For large-scale deployments.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('8 Core Cable - 3000m')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="gyxtw.jpeg" class="card-img-top" alt="12 Core Cable">
+            <div class="card-body">
+              <h5 class="card-title">12 Core - 3000m</h5>
+              <p class="card-text">Maximum capacity and reliability.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('12 Core Cable - 3000m')">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Accessories -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="splicer.jpeg" class="card-img-top" alt="Splicer">
+            <div class="card-body">
+              <h5 class="card-title">Splicer</h5>
+              <p class="card-text">Essential for fiber fusion and repairs.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Splicer')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="fasup.jpeg" class="card-img-top" alt="Fast Connector">
+            <div class="card-body">
+              <h5 class="card-title">Fast Connector</h5>
+              <p class="card-text">Quick and reliable fiber connections.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Fast Connector')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="fusion.jpeg" class="card-img-top" alt="Fiber Fusion">
+            <div class="card-body">
+              <h5 class="card-title">Fiber Fusion</h5>
+              <p class="card-text">High-quality fiber fusion splicing.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Fiber Fusion')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="16.jpeg" class="card-img-top" alt="Fiber Box 12 Core">
+            <div class="card-body">
+              <h5 class="card-title">Fiber Box 12 Core</h5>
+              <p class="card-text">Secure enclosure for 12 core cables.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Fiber Box 12 Core')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="2.jpeg" class="card-img-top" alt="Fiber Box 2 Core">
+            <div class="card-body">
+              <h5 class="card-title">Fiber Box 2 Core</h5>
+              <p class="card-text">Compact box for 2 core cables.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Fiber Box 2 Core')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="48.jpeg" class="card-img-top" alt="Fiber Box 48 Core">
+            <div class="card-body">
+              <h5 class="card-title">Fiber Box 48 Core</h5>
+              <p class="card-text">Large capacity for 48 core installations.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Fiber Box 48 Core')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="24.jpeg" class="card-img-top" alt="24 Core Patch Panel">
+            <div class="card-body">
+              <h5 class="card-title">24 Core Patch Panel</h5>
+              <p class="card-text">Organize and manage 24 fiber connections.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('24 Core Patch Panel')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="vsol upjpeg.jpeg" class="card-img-top" alt="ONU UPC">
+            <div class="card-body">
+              <h5 class="card-title">ONU UPC</h5>
+              <p class="card-text">Optical Network Unit with UPC connector.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('ONU UPC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="vsol apjpeg.jpeg" class="card-img-top" alt="ONU APC">
+            <div class="card-body">
+              <h5 class="card-title">ONU APC</h5>
+              <p class="card-text">Optical Network Unit with APC connector.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('ONU APC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Splitters UPC -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="2wa up.jpeg" class="card-img-top" alt="2 Way Splitter UPC">
+            <div class="card-body">
+              <h5 class="card-title">2 Way Splitter UPC</h5>
+              <p class="card-text">Low insertion loss, high uniformity, ideal for FTTH networks.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('2 Way Splitter UPC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="54wa up.jpeg" class="card-img-top" alt="4 Way Splitter UPC">
+            <div class="card-body">
+              <h5 class="card-title">4 Way Splitter UPC</h5>
+              <p class="card-text">Splits optical signal into 4 outputs, UPC polish, compact design.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('4 Way Splitter UPC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="8wa up.jpeg" class="card-img-top" alt="8 Way Splitter UPC">
+            <div class="card-body">
+              <h5 class="card-title">8 Way Splitter UPC</h5>
+              <p class="card-text">High performance, 8 output ports, UPC connector, for PON systems.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('8 Way Splitter UPC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Splitters APC -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="2way.jpg" class="card-img-top" alt="2 Way Splitter APC">
+            <div class="card-body">
+              <h5 class="card-title">2 Way Splitter APC</h5>
+              <p class="card-text">APC polish, low PDL, suitable for high-precision applications.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('2 Way Splitter APC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="4way.jpg" class="card-img-top" alt="4 Way Splitter APC">
+            <div class="card-body">
+              <h5 class="card-title">4 Way Splitter APC</h5>
+              <p class="card-text">4 outputs, APC connector, stable and reliable for FTTx projects.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('4 Way Splitter APC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="8way.jpg" class="card-img-top" alt="8 Way Splitter APC">
+            <div class="card-body">
+              <h5 class="card-title">8 Way Splitter APC</h5>
+              <p class="card-text">8-way split, APC polish, low excess loss, for telecom networks.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('8 Way Splitter APC')">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Drop Cables -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="drop cable.jpeg" class="card-img-top" alt="Drop Cable 50m">
+            <div class="card-body">
+              <h5 class="card-title">Drop Cable 50m GYXTW 2 Core 6mm</h5>
+              <p class="card-text">Durable drop cable for short runs.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Drop Cable 50m GYXTW 2 Core 6mm')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="drop cable.jpeg" class="card-img-top" alt="Drop Cable 70m">
+            <div class="card-body">
+              <h5 class="card-title">Drop Cable 70m GYXTW 2 Core 6mm</h5>
+              <p class="card-text">Reliable for medium distances.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Drop Cable 70m GYXTW 2 Core 6mm')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="drop cable.jpeg" class="card-img-top" alt="Drop Cable 100m">
+            <div class="card-body">
+              <h5 class="card-title">Drop Cable 100m GYXTW 2 Core 6mm</h5>
+              <p class="card-text">Perfect for longer installations.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Drop Cable 100m GYXTW 2 Core 6mm')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="drop cable.jpeg" class="card-img-top" alt="Drop Cable 150m">
+            <div class="card-body">
+              <h5 class="card-title">Drop Cable 150m GYXTW 2 Core 6mm</h5>
+              <p class="card-text">For extended reach requirements.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Drop Cable 150m GYXTW 2 Core 6mm')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="drop cable.jpeg" class="card-img-top" alt="Drop Cable 200m">
+            <div class="card-body">
+              <h5 class="card-title">Drop Cable 200m GYXTW 2 Core 6mm</h5>
+              <p class="card-text">Heavy-duty for demanding jobs.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Drop Cable 200m GYXTW 2 Core 6mm')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="drop cable.jpeg" class="card-img-top" alt="Drop Cable 300m">
+            <div class="card-body">
+              <h5 class="card-title">Drop Cable 300m GYXTW 2 Core 6mm</h5>
+              <p class="card-text">Maximum length for large projects.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Drop Cable 300m GYXTW 2 Core 6mm')">Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add new products -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="clamps.jpeg" class="card-img-top" alt="Clamps 6-9 cables">
+            <div class="card-body">
+              <h5 class="card-title">Clamps 6-9 cables</h5>
+              <p class="card-text">Securely holds 6 to 9 fiber cables for organized installations.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Clamps 6-9 cables')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="idefierjpeg.jpeg" class="card-img-top" alt="Identifier to measure the db">
+            <div class="card-body">
+              <h5 class="card-title">Identifier to measure the db</h5>
+              <p class="card-text">Tool for identifying and measuring signal loss (dB) in fiber cables.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Identifier to measure the db')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="nk260.jpeg" class="card-img-top" alt="Nk260 multimeter">
+            <div class="card-body">
+              <h5 class="card-title">Nk260 multimeter</h5>
+              <p class="card-text">Multifunctional meter for testing and troubleshooting fiber networks.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Nk260 multimeter')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="asseet.jpeg" class="card-img-top" alt="Cassetes">
+            <div class="card-body">
+              <h5 class="card-title">Cassetes</h5>
+              <p class="card-text">Fiber optic cassettes for splicing and organizing fibers.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Cassetes')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="cleaver.jpeg" class="card-img-top" alt="Cleavers ET20s">
+            <div class="card-body">
+              <h5 class="card-title">Cleavers ET20s</h5>
+              <p class="card-text">Precision fiber cleaver for clean, accurate cuts (ET20s model).</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Cleavers ET20s')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="cleaver.jpeg" class="card-img-top" alt="Cleaver FC6">
+            <div class="card-body">
+              <h5 class="card-title">Cleaver FC6</h5>
+              <p class="card-text">Reliable FC6 fiber cleaver for consistent, high-quality splices.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Cleaver FC6')">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="cutter.jpeg" class="card-img-top" alt="Cutter">
+            <div class="card-body">
+              <h5 class="card-title">Cutter</h5>
+              <p class="card-text">Durable cutter for preparing and trimming fiber optic cables.</p>
+              <button class="btn btn-logo w-100" onclick="openProductDetails('Cutter')">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Details sections could be modals or anchors here -->
+    <!-- Product Details Modal -->
+    <div class="product-details" id="productDetailsModal">
+      <div class="product-details-content">
+        <button class="close-btn" onclick="closeProductDetails()">&times;</button>
+        <h3 id="detailsTitle">Product Title</h3>
+        <div id="detailsDescription">Product description goes here.</div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-logo text-center py-3">
+    Contact us on 81234175 or 78871537 || Email: Info@ac-lb.com<br>
+    &copy;2025 Copyright reserved.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Product descriptions
+  const productDescriptions = {
+    '4 Core Cable - 1000m': 'A compact fiber optic cable with 4 cores, ideal for small installations and short-distance connections. High durability and low signal loss.',
+    '6 Core Cable - 2000m': 'Medium-capacity cable suitable for moderate networking needs. Offers reliable performance over longer distances.',
+    '8 Core Cable - 3000m': 'Designed for large-scale deployments, this cable provides high bandwidth and robust protection for critical infrastructure.',
+    '12 Core Cable - 3000m': 'Maximum capacity cable for demanding environments, supporting up to 12 fiber connections in a single sheath.',
+    'Splicer': 'A precision tool used to join two fiber optic cables together, ensuring minimal signal loss and high reliability.',
+    'Fast Connector': 'Quick-connect fiber optic connector for rapid field termination, ensuring secure and stable connections.',
+    'Fiber Fusion': 'Fusion splicing equipment for permanent, low-loss fiber joins, essential for backbone and distribution networks.',
+    'Fiber Box 12 Core': 'Protective enclosure for up to 12 fiber connections, suitable for indoor and outdoor use.',
+    'Fiber Box 2 Core': 'Compact fiber box for 2 core cables, ideal for small branch connections.',
+    'Fiber Box 48 Core': 'Large capacity fiber box for managing up to 48 fiber connections in one place.',
+    '24 Core Patch Panel': 'Organizes and manages up to 24 fiber connections, making maintenance and expansion easy.',
+    'ONU UPC': 'Optical Network Unit with UPC connector, used for high-speed internet access in FTTH networks.',
+    'ONU APC': 'Optical Network Unit with APC connector, providing low reflection and high performance.',
+    'Drop Cable 50m GYXTW 2 Core 6mm': 'Durable drop cable for short runs, armored for extra protection in harsh environments.',
+    'Drop Cable 70m GYXTW 2 Core 6mm': 'Reliable drop cable for medium distances, suitable for outdoor installations.',
+    'Drop Cable 100m GYXTW 2 Core 6mm': 'Perfect for longer installations, offering flexibility and strength.',
+    'Drop Cable 150m GYXTW 2 Core 6mm': 'For extended reach requirements, this cable ensures signal integrity over long distances.',
+    'Drop Cable 200m GYXTW 2 Core 6mm': 'Heavy-duty drop cable for demanding jobs, armored and weather-resistant.',
+    'Drop Cable 300m GYXTW 2 Core 6mm': 'Maximum length drop cable for large projects, designed for reliability and durability.',
+    '2 Way Splitter UPC': 'Optical splitter that divides a single input into two outputs, UPC polish for low insertion loss.',
+    '4 Way Splitter UPC': 'Splits optical signal into 4 outputs, UPC polish, compact and efficient.',
+    '8 Way Splitter UPC': 'High performance splitter with 8 output ports, UPC connector, for PON systems.',
+    '2 Way Splitter APC': 'APC polish splitter, low PDL, suitable for high-precision applications.',
+    '4 Way Splitter APC': '4 outputs, APC connector, stable and reliable for FTTx projects.',
+    '8 Way Splitter APC': '8-way split, APC polish, low excess loss, for telecom networks.',
+    'Clamps 6-9 cables': 'Securely holds 6 to 9 fiber optic cables in place, ensuring organized and safe installations. Made from durable materials for long-term use.',
+    'Identifier to measure the db': 'A fiber optic identifier tool used to detect and measure signal loss (dB) in live fiber cables without disrupting service.',
+    'Nk260 multimeter': 'A multifunctional fiber optic multimeter for testing, measuring, and troubleshooting fiber networks. Features accurate readings and easy operation.',
+    'Cassetes': 'Fiber optic cassettes designed for splicing, storing, and organizing multiple fiber connections in a compact enclosure.',
+    'Cleavers ET20s': 'The ET20s fiber cleaver delivers precise, clean cuts for optimal splicing results. Essential for professional fiber installations.',
+    'Cleaver FC6': 'The FC6 cleaver is a reliable tool for producing consistent, high-quality fiber cleaves, suitable for all standard splicing jobs.',
+    'Cutter': 'A robust cutter for preparing and trimming fiber optic cables, ensuring clean edges and easy handling during installation.'
+  };
+  const detailsModal = document.getElementById('productDetailsModal');
+  const detailsTitle = document.getElementById('detailsTitle');
+  const detailsDescription = document.getElementById('detailsDescription');
+  function openProductDetails(title) {
+    detailsTitle.textContent = title;
+    detailsDescription.textContent = productDescriptions[title] || 'No description available.';
+    detailsModal.classList.add('active');
+  }
+  function closeProductDetails() {
+    detailsModal.classList.remove('active');
+  }
+  // Attach to all details buttons
+  document.querySelectorAll('.card button').forEach(btn => {
+    btn.onclick = function(e) {
+      e.preventDefault();
+      const card = btn.closest('.card');
+      const title = card.querySelector('.card-title').textContent;
+      openProductDetails(title);
+    };
+  });
+  </script>
+</body>
+</html> 
